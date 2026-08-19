@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect, useCallback } from 'react'
 import './App.css'
 
-const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:8080/api'
+const API_BASE = import.meta.env.VITE_API_BASE || 'https://docmind-81ju.onrender.com/api'
 const STORAGE_KEY = 'docmind_session'
 const QUESTION_MAX_LENGTH = 300
 const STATUS_POLL_INTERVAL = 15000
