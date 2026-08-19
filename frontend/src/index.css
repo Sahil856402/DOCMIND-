@@ -1,0 +1,46 @@
+:root {
+  --ink: #0B0E13;
+  --paper: #F2EEE3;
+  --amber: #E8960C;
+  --ink-soft: #171B23;
+  --paper-dim: #C9C4B6;
+  --border: #2A2F3A;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: 'Inter', sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.display {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+::selection {
+  background: var(--amber);
+  color: var(--ink);
+}
+
+a { color: var(--amber); }
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--ink); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
